@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.8'
 
 services:
   # if mongo access doesn't work, just run: docker inspect <container_id_mongo> | grep IPAddress and use the IP address returned.

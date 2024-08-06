@@ -1,0 +1,16 @@
+networks:
+  default:
+    name: project-name
+
+services:
+  site:
+    container_name: project-app
+    build: 
+      dockerfile: Dockerfile
+      context: ./
+    volumes:
+      - ../project-path/:/var/www/html/
+    ports:
+      - "80:80"
+    networks:
+      - default
